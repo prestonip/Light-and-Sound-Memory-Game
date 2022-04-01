@@ -1,0 +1,70 @@
+.hidden {
+   display: none;
+ }
+ 
+ html {
+   box-sizing: border-box;
+   font-size: 16px;
+ }
+ 
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+ 
+ /* adjust typography defaults */
+ body {
+   margin: 1rem;
+   font-family: 'Courier New', Courier, monospace;
+   line-height: 1.5;
+   background-color: gray;
+   color: azure;
+ }
+ 
+ h1 {
+   font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ button {
+   padding: 10px;
+   border-radius: 10px;
+ }
+ 
+ #gameButtonArea > button {
+    width: 200px;
+    height: 200px;
+    border-radius: 19px;
+    border: 3px solid;
+    margin: 2px;
+ }
+ 
+ #button1 {
+     background: red;
+ }
+ #button1:active, #button1.lit {
+     background: pink;
+ }
+ #button2 {
+     background: blue;
+ }
+ #button2:active, #button2.lit {
+     background: lightskyblue;
+ }
+ #button3 {
+     background: green;
+ }
+ #button3:active, #button3.lit {
+     background: lightgreen;
+ }
+ #button4 {
+     background: yellow;
+ }
+ #button4:active, #button4.lit {
+     background: lightyellow;
+ }
+ 
+ /* images and videos max out at full width */
+ img,
+ video {
+   height: auto;
+   max-width: 100%;
+ }
