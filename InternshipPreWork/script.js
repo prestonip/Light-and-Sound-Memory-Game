@@ -4,7 +4,7 @@ const cluePauseTime = 333;
 const nextClueWaitTime = 1000;
 
 //Global Variables
-var pattern = [2, 1, 4, 3];
+var pattern = [null, null, null, null, null, null];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -14,6 +14,7 @@ var guessCounter = 0;
 
 
 function startGame(){
+   generatePattern();
   progress = 0; 
   gamePlaying = true;
 
@@ -35,6 +36,12 @@ function lightButton(btn){
 }
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
+}
+
+function generatePattern(){
+   for(let i = 0; i < pattern.length; i++){
+      pattern.fill(Math.random() * 4 + 1, i, i+1);
+   }
 }
 
 
