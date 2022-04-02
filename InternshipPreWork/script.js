@@ -4,7 +4,7 @@ const cluePauseTime = 333;
 const nextClueWaitTime = 1000;
 
 //Global Variables
-var pattern = [null, null, null, null, null, null];
+var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -12,21 +12,16 @@ var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 
 
-
 function startGame(){
-   generatePattern();
   progress = 0; 
   gamePlaying = true;
-
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
-  
   playClueSequence();
 }
 
 function stopGame(){
   gamePlaying = false;
-
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 }
@@ -36,12 +31,6 @@ function lightButton(btn){
 }
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
-}
-
-function generatePattern(){
-   for(let i = 0; i < pattern.length; i++){
-      pattern.fill(Math.random() * 4 + 1, i, i+1);
-   }
 }
 
 
@@ -56,10 +45,10 @@ function playSingleClue(btn){
 function playClueSequence(){
   guessCounter = 0;
   let delay = nextClueWaitTime;
-  for(let i = 0; i <= progress - 1; i++){
+  for(let i = 0; i <= progress; i++){
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue, delay, pattern[i])
-    delay += clueHoldTime;
+    delay += clueHoldTime
     delay += cluePauseTime;
   }
   
@@ -70,7 +59,7 @@ function loseGame(){
   alert("Game Over. You lost.");
 }
 function winGame(){
-  stopGame;
+  stopGame();
   alert("You Win!");
 }
 
@@ -81,7 +70,7 @@ function guess(btn){
   }
   if(pattern[guessCounter] == btn){
     if(guessCounter == progress){
-      if(progress == pattern.legnth - 1){
+      if(progress == pattern.legnth-1){
         winGame();
       }else{
         progress++;
