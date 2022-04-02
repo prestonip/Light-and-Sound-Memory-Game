@@ -25,10 +25,10 @@ The following **optional** features are implemented:
 
 * [$] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
-* [$] More than 4 functional game buttons
+* [] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
-* [$] Computer picks a different pattern each time the game is played
-* [$] Player only loses after 3 mistakes (instead of on the first mistake)
+* [ ] Computer picks a different pattern each time the game is played
+* [ ] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
@@ -40,23 +40,24 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
+![](https://i.imgur.com/qTMrraM.gif)
+
 ![](gif2-link-here)
 ![](gif3-link-here)
 ![](gif4-link-here)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+[https://www.w3schools.com/, https://stackoverflow.com/]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+[A challenge I had during this project was understanding the logic flow between the js functions. It took me a while to understand what playSingleClue and playClueSequence did, and how they interacted, but after following through the code while executing, it made more sense to me. Another challenge I faced was the syntax. I am not the most familiar with JavaScript, so there was a bit of learning to be done while I coded. While the language is quite simple and easy to read, the built-in functions are the most interesting part of any language to me, and I want to learn more about how methods like setTimeout and the Sound Synthesis Functions work.]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[In the realm of web programming, I have many questions regarding API's, webscraping, and data management/transfer. I believe the best way to learn is through hands-on experience, and I am eager to have this opportunity with CodePath to possibly learn as much as I can about these topics. I want to know how API's work, and their fundamental components as well. I want to know how people are able to scan for and collect certain data from websites. I want to have a very strong knowledge of how to handle data, so that I can use the skill in self-guided projects.]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[I would implement a levelling system: After pressing the start button (or perhaps before), you would be able to choose which difficulty you would like to play on. On higher difficulties, the length of played clues decreases, and so does the time in between each consecutive clue, and on the hardest difficulty, if you don't answer within a certain period of time, you lose.]
 
 
 
@@ -67,7 +68,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Preston Powell]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
