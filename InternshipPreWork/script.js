@@ -46,9 +46,9 @@ function playClueSequence(){
   guessCounter = 0;
   let delay = nextClueWaitTime;
   for(let i = 0; i <= progress; i++){
-    console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
-    setTimeout(playSingleClue, delay, pattern[i])
-    delay += clueHoldTime
+    console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
+    setTimeout(playSingleClue, delay, pattern[i]);
+    delay += clueHoldTime;
     delay += cluePauseTime;
   }
   
